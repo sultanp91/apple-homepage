@@ -9,8 +9,10 @@ html {
 
 body {
   padding: 0 3rem;
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
+
+/* Hero and nav */
 
 .hero {
   background-image: url(./images/your_verse_hero_2x.jpg);
@@ -51,10 +53,15 @@ body {
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.8rem;
+  /* border-right: solid 1px #535353; */
 }
 
 .nav-items li:last-of-type {
   margin-right: 1rem;
+  border-right: none;
+}
+#apple-logo {
+  height: 2rem;
 }
 
 .hero-text {
@@ -66,6 +73,22 @@ body {
   font-weight: 100;
   font-size: 5.5rem;
 }
+
+.hero-text h2 {
+  font-weight: 200;
+  font-size: 3rem;
+  margin: 1rem 0 2.5rem;
+}
+
+.hero-text h3 {
+  font-weight: 200;
+  font-size: 2.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Promo section  */
 
 .promo {
   display: grid;
