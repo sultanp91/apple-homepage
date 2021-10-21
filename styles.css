@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  padding: 0 3rem;
+}
+
+.hero {
+  background-image: url(./images/your_verse_hero_2x.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  min-height: 65vh;
+  border: solid 1px #fff;
+  position: relative;
+}
+
+.nav {
+  background-image: linear-gradient(
+    to bottom,
+    #939393 0%,
+    #717171 49%,
+    #5e5e5e 51%,
+    #787878 100%
+  );
+  min-width: 70%;
+  position: absolute;
+  top: 8rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+.nav-items {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  color: #fff;
+}
+
+.nav-items li {
+  margin-left: 4rem;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
