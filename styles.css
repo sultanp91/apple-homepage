@@ -9,16 +9,19 @@ html {
 
 body {
   padding: 0 3rem;
+  font-family: Inter, sans-serif;
 }
 
 .hero {
   background-image: url(./images/your_verse_hero_2x.jpg);
   background-size: cover;
-  background-position: bottom;
+  background-position: 50% 100%;
   background-repeat: no-repeat;
   min-height: 65vh;
+  min-width: 96rem;
   border: solid 1px #fff;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav {
@@ -29,12 +32,9 @@ body {
     #5e5e5e 51%,
     #787878 100%
   );
-  min-width: 70%;
-  position: absolute;
-  top: 8rem;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 3px;
+  width: 70%;
+  margin: 8rem auto 6rem;
+  border-radius: 4px;
 }
 
 .nav-items {
@@ -48,8 +48,31 @@ body {
 
 .nav-items li {
   margin-left: 4rem;
-  font-family: Helvetica, sans-serif;
   font-size: 1.3rem;
   font-weight: 500;
   line-height: 1.8rem;
+}
+
+.nav-items li:last-of-type {
+  margin-right: 1rem;
+}
+
+.hero-text {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text h1 {
+  font-weight: 100;
+  font-size: 5.5rem;
+}
+
+.promo {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.promo img {
+  width: 100%;
 }
