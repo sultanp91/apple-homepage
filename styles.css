@@ -105,8 +105,34 @@ body {
 .footer {
   max-width: 70%;
   margin: 2rem auto;
+  font-size: 1rem;
+  line-height: 1.2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+}
+
+.footer-info {
+  color: #6e6e6e;
+}
+
+.footer-info p {
+  margin: 0.5rem 0 1.5rem;
+}
+
+.footer-info a {
+  color: #0088cc;
+  text-decoration: none;
+}
+.footer-info a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.footer-info-links {
+  padding: 0 0.5rem;
+}
+.footer-info-links:first-of-type {
+  border-right: solid 1px #cccccc;
 }
 
 .footer-links {
@@ -116,12 +142,15 @@ body {
   list-style: none;
 }
 
-.footer-links li {
+.footer-links li a {
   color: #0088cc;
-  font-size: 1rem;
-  line-height: 1.2rem;
   padding: 0 0.5rem;
   border-right: solid 1px #cccccc;
+  text-decoration: none;
+}
+
+.footer-links li:last-of-type {
+  border-right: none;
 }
 
 .footer-links li:hover {
